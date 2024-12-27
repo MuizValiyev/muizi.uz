@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --background: #191919;
+  --background: #141414;
   --foreground: #fff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #191919;
+    --background: #141414;
     --foreground: #fff;
   }
 }
@@ -21,25 +21,25 @@ body {
 
 
 @font-face {
-  font-family: 'Involve';
+  font-family: 'Ubuntu';
   src: url('/fonts/Ubuntu-Bold.ttf') format('truetype');
   font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Involve';
+  font-family: 'Ubuntu';
   src: url('/fonts/Ubuntu-Medium.ttf') format('truetype');
   font-weight: 600;
 }
 
 @font-face {
-  font-family: 'Involve';
+  font-family: 'Ubuntu';
   src: url('/fonts/Ubuntu-Regular.ttf') format('truetype');
   font-weight: 500;
 }
 
 @font-face {
-  font-family: 'Involve';
+  font-family: 'Ubuntu';
   src: url('/fonts/Ubuntu-Light.ttf') format('truetype');
   font-weight: 400;
 }

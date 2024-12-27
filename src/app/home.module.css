@@ -1,5 +1,473 @@
-.container{
+.container {
     width: 100%;
-    height: 100%;
-    font-size: 20px;
+    font-family: Ubuntu;
 }
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #191919;
+    height: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+}
+
+.blockNav {
+    width: 1000px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blockNav a {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.navBtn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.navBtn button {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.popupOpen {
+    display: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.popup {
+    position: sticky;
+    top: 70px;
+    width: 100%;
+    z-index: 100000;
+    background-color: #191919;
+    color: #FFFFFF;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.popup button {
+    width: 95%;
+    background-color: #191919;
+    color: #FFFFFF;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.secHome {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skills, .projects, .contacts {
+    height: 60px;
+    width: 100%;
+    background: transparent;
+}
+
+.blockhome {
+    width: 1000px;
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 0px 60px 0px;
+    gap: 20px;
+}
+
+.blockhome h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.anonimtext {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.information {
+    opacity: 0.8;
+    width: 55%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.secskills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+}
+
+.blockskills {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.blockfront,
+.blockback {
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: #191919;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0px 20px;
+    padding: 15px;
+}
+
+.blockfront p,
+.blockback p {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.blockskills h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.blockskills h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.secprojects {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blockprojects {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.blockprojects h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+.projectsgrid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.oneproject {
+    display: flex;
+    background-color: #191919;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.oneproject p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.oneproject a {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-style: normal;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.oneproject a:hover {
+    opacity: 1;
+}
+
+.oneproject img {
+    width: 275px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.seccontact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+}
+
+.blockcontact {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.blockcontact h1 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.contactgrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.onecontact {
+    min-width: 275px;
+    padding: 10px 30px;
+    display: flex;
+    background-color: #191919;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.navBtn button:hover,
+.blockNav a:hover {
+    color: #CCCCCC;
+}
+
+
+.svgs {
+    width: 24px;
+    height: 24px;
+}
+
+.contactbody,
+.onecontact a {
+    color: #fff;
+    font-weight: 600;
+    font-style: normal;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.onecontact a:hover {
+    opacity: 1;
+}
+
+.contacthead {
+    color: #fff;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+
+.blockfooter {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 20px;
+}
+
+.blockfooter h1 {
+    font-size: 40px;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.row a {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.row a:hover {
+    color: #CCCCCC;
+}
+
+.rowsocial {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.svgsfooter {
+    width: 24px;
+    height: 24px;
+}
+
+.svgsfooter:hover {
+    color: #CCCCCC;
+}
+
+@media screen and (max-width:1440px) {}
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:1000px) {
+
+    .blockhome,
+    .blockskills,
+    .blockprojects,
+    .blockcontact {
+        width: 100%;
+    }
+
+    .projectsgrid {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .blockback,
+    .blockfront {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .oneproject img {
+        width: 223px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .contactgrid {
+        grid-template-columns: auto;
+    }
+
+    .oneproject img {
+        width: 193px;
+        height: auto;
+    }
+
+    .information {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .blockfront,
+    .blockback {
+        grid-template-columns: auto auto auto;
+        gap: 30px 0px;
+    }
+
+    .projectsgrid {
+        grid-template-columns: auto;
+    }
+
+    .oneproject img {
+        width: 275px;
+        height: auto;
+    }
+
+    .navBtn {
+        display: none;
+    }
+
+    .popupOpen {
+        display: block;
+    }
+    .information, .oneproject a, .contactbody, .onecontact a{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:425px) {}
+
+@media screen and (max-width:375px) {
+
+    .blockfront,
+    .blockback {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width:325px) {}
