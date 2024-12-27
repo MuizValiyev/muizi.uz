@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "./home.module.css";
 import { useState, useRef } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 export default function Home() {
   const [popup, setpopup] = useState(false);
 
@@ -139,13 +139,13 @@ export default function Home() {
           <div className={styles.projectsgrid}>
             <div className={styles.oneproject}>
               <Image
-                src="/projects/tcats.png"
+                src="/projects/muizi.png"
                 alt="project"
                 width={275}
                 height={200}
               />
-              <p>TCats.uz</p>
-              <a href="tcats.uz">View</a>
+              <p>MuIZI</p>
+              <a href="https://muizi.vercel.app/">View</a>
             </div>
             <div className={styles.oneproject}>
               <Image
