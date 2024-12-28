@@ -201,9 +201,9 @@ export default function Home() {
         <div className={styles.blockfooter}>
           <h1>MuIZI</h1>
           <div className={styles.row}>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+          <button onClick={scrollToBlock2}>Skills</button>
+            <button onClick={scrollToBloc3}>Projects</button>
+            <button onClick={scrollToBlock4}>Contact</button>
           </div>
           <div className={styles.rowsocial}>
             <a target="_blank" href="https://t.me/muizxoja">
