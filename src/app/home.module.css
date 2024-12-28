@@ -12,6 +12,7 @@
     position: sticky;
     top: 0px;
     z-index: 10000;
+    box-shadow: 0 1px 4px #ffffff24;
 }
 
 .blockNav {
@@ -383,6 +384,35 @@
     color: #CCCCCC;
 }
 
+
+
+.adaptiveNavBar{
+    display: none;
+    flex-direction: row;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    height: 70px;
+    background: #191919;
+    box-shadow: 0 -1px 4px #ffffff24;
+    z-index: 10000;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    backdrop-filter: blur(50px);
+}
+
+.adaptiveNavBar button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
 @media screen and (max-width:1440px) {}
 
 @media screen and (max-width:1280px) {}
@@ -449,6 +479,14 @@
     }
     .information, .oneproject a, .contactbody, .onecontact a{
         opacity: 1;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .adaptiveNavBar{
+        display: flex;
     }
 }
 

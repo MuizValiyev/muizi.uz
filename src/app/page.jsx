@@ -4,16 +4,6 @@ import styles from "./home.module.css";
 import { useState, useRef } from "react";
 import { motion } from "motion/react";
 export default function Home() {
-  const [popup, setpopup] = useState(false);
-
-  const OpenPopup = () => {
-    if (!popup) {
-      setpopup(true);
-    } else {
-      setpopup(false);
-    }
-  };
-
   const targetRef = useRef(null);
   const scrollToBlock = () => {
     targetRef.current.scrollIntoView({ behavior: "smooth" });
@@ -45,33 +35,8 @@ export default function Home() {
             <button onClick={scrollToBloc3}>Projects</button>
             <button onClick={scrollToBlock4}>Contact</button>
           </div>
-          <button onClick={OpenPopup} className={styles.popupOpen}>
-            <Image
-              src="/list.svg"
-              alt="Menu"
-              width={35}
-              height={35}
-              className={styles.burger}
-            />
-          </button>
         </div>
       </nav>
-      <motion.div
-        initial={{ opacity: 0, y: -20, display: "none" }}
-        animate={
-          popup
-            ? { opacity: 1, y: 0, display: "flex" }
-            : { opacity: 0, y: -20, display: "none" }
-        }
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.2, ease: "linear" }}
-        className={styles.popup}
-      >
-        <button onClick={scrollToBlock}>Home</button>
-        <button onClick={scrollToBlock2}>Skills</button>
-        <button onClick={scrollToBloc3}>Projects</button>
-        <button onClick={scrollToBlock4}>Contact</button>
-      </motion.div>
       <section ref={targetRef} id="home" className={styles.secHome}>
         <div className={styles.blockhome}>
           <h1>MuIZI</h1>
@@ -201,7 +166,7 @@ export default function Home() {
         <div className={styles.blockfooter}>
           <h1>MuIZI</h1>
           <div className={styles.row}>
-          <button onClick={scrollToBlock2}>Skills</button>
+            <button onClick={scrollToBlock2}>Skills</button>
             <button onClick={scrollToBloc3}>Projects</button>
             <button onClick={scrollToBlock4}>Contact</button>
           </div>
@@ -227,6 +192,13 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <div className={styles.adaptiveNavBar}>
+        <button onClick={scrollToBlock}><Image src="/home.svg" alt="home" width={20} height={20}/>Home</button>
+        <button onClick={scrollToBlock2}><Image src="/skills.svg" alt="home" width={20} height={20}/>Skills</button>
+        <button onClick={scrollToBloc3}><Image src="/projects.svg" alt="home" width={20} height={20}/>Projects</button>
+        <button onClick={scrollToBlock4}><Image src="/contact.svg" alt="home" width={20} height={20}/>Contact</button>
+      </div>
     </div>
   );
 }
