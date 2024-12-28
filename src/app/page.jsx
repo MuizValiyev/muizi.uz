@@ -110,17 +110,18 @@ export default function Home() {
                 height={200}
               />
               <p>MuIZI</p>
-              <a href="https://muizi.vercel.app/">View</a>
+              <a href="https://muizi.vercel.app/">View<Image className={styles.arrowright} src='/rightArrow.svg' alt="arrow" width={24} height={24}/></a>
             </div>
             <div className={styles.oneproject}>
               <Image
+              className={styles.projectimg}
                 src="/projects/tcats.png"
                 alt="project"
                 width={275}
                 height={200}
               />
               <p>TCats.uz</p>
-              <a href="https://tcats.uz">View</a>
+              <a href="https://tcats.uz">View<Image className={styles.arrowright} src='/rightArrow.svg' alt="arrow" width={24} height={24}/></a>
             </div>
           </div>
         </div>
@@ -142,6 +143,7 @@ export default function Home() {
               <p className={styles.contactbody}>valiyevmuiz0407@gmail.com</p>
               <a target="_blank" href="mailto:valiyevmuiz0407@gmail.com">
                 message
+                <Image className={styles.arrowright} src='/rightArrow.svg' alt="arrow" width={24} height={24}/>
               </a>
             </div>
             <div className={styles.onecontact}>
@@ -156,6 +158,7 @@ export default function Home() {
               <p className={styles.contactbody}>@muizxoja</p>
               <a target="_blank" href="https://t.me/muizxoja">
                 message
+                <Image className={styles.arrowright} src='/rightArrow.svg' alt="arrow" width={24} height={24}/>
               </a>
             </div>
           </div>
